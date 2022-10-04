@@ -33,7 +33,6 @@ int main()
         {
             case (Square): //user entered 1
             {
-                system("clear"); //clear all output to generate first square
                 for (int i = 0; i <= length; i++) //regenerate squares by incrementing length
                 {
                     system("clear"); //clear output each time new generation occurs

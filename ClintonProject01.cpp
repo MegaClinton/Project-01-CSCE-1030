@@ -25,10 +25,9 @@ int main()
     srand(time(NULL)); //seed random number generator
     int ASCIIvalue = (rand() % 32) + 33;
 
-    cout << "What shape do you want to generate:\n1.Square\n2.Triange\n3.Pentagon\n4.Sentence\n5.Quit" << endl;
-    cout << "Enter your choice: "; cin >> choice;
-
     do {
+        cout << "What shape do you want to generate:\n1.Square\n2.Triange\n3.Pentagon\n4.Sentence\n5.Quit" << endl;
+        cout << "Enter your choice: "; cin >> choice;
         switch (choice)
         {
             case (Square): //user entered 1
@@ -54,7 +53,7 @@ int main()
             }
             default: //user entered an incorrect choice
             {
-                cout << "Wrong shape.";
+                cout << "Wrong shape." << endl;
                 break;
             }
         }

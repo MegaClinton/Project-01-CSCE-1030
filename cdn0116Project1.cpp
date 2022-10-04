@@ -23,7 +23,7 @@ int main()
 
 
     srand(time(NULL)); //seed random number generator
-    int ASCIIvalue = (rand() % 32) + 33;
+    char ASCIIchar = (rand() % 32) + 33;
 
     do {
         cout << "What shape do you want to generate:\n1.Square\n2.Triange\n3.Pentagon\n4.Sentence\n5.Quit" << endl;

@@ -15,7 +15,7 @@ int main()
     enum Choices{Square = 1, Triangle = 2, Pentagon = 3, Sentence = 4, Quit = 5};
 
     cout << "Enter size: "; cin >> length;
-    while (length % 2 != 1)
+    while (length % 2 != 1) //length entered must be odd otherwise keep looping
     {
         cout << "You must enter an odd number." << endl;
         cout << "Enter size: "; cin >> length;

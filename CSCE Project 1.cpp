@@ -81,7 +81,7 @@ int main()
                         str.erase(i, 1);
                     } else
                     {
-                        continue;
+                        continue; //fhdsuaiofdewaa
                     }
                     sleep(1);
                 }

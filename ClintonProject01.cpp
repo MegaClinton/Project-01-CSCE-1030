@@ -10,7 +10,6 @@ using namespace std;
 int main()
 {
     int length;
-    int choice;
 
     enum Choices{Square = 1, Triangle = 2, Pentagon = 3, Sentence = 4, Quit = 5};
 
@@ -27,7 +26,10 @@ int main()
         char ASCIIchar = (rand() % 32) + 33; //ASCII character to be used for shape generation
 
         cout << "What shape do you want to generate:\n1.Square\n2.Triangle\n3.Pentagon\n4.Sentence\n5.Quit" << endl;
-        cout << "Enter your choice: "; cin >> choice;
+        cout << "Enter your choice: ";
+        int num;
+        cin >> num;
+        Choices choice = static_cast<Choices>(num);
 
         switch (choice)
         {

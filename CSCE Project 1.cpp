@@ -21,26 +21,25 @@ int main()
         cout << "Enter size: "; cin >> length;
     }
 
-    do
-    {
+    do {
         srand(time(NULL)); //seed random number generator
         char ASCIIchar = (rand() % 32) + 33; //ASCII character to be used for shape generation
 
         cout << "What shape do you want to generate:\n1.Square\n2.Triangle\n3.Pentagon\n4.Sentence\n5.Quit" << endl;
-        cout << "Enter your choice: "; cin >> choice;
+        cout << "Enter your choice: ";
+        cin >> choice;
 
-        switch (choice)
-        {
+        switch (choice) {
             case (Square): //user entered 1
             {
                 for (int i = 0; i <= length; i++) //regenerate squares by incrementing length
                 {
                     system("clear"); //clear output each time new generation occurs
                     int subLength = i + 1; //generate squares of incremental length according to i
-                    for(int h = 1; h < subLength; h++) //generate vertical row
+                    for (int h = 1; h < subLength; h++) //generate vertical row
                     {
                         cout << ASCIIchar;
-                        for(int v = 1; v < subLength - 1; v++) //generate horizontal row for every vertical row
+                        for (int v = 1; v < subLength - 1; v++) //generate horizontal row for every vertical row
                         {
                             cout << ASCIIchar;
                         }
@@ -66,7 +65,7 @@ int main()
 
                 getline(cin, str);
 
-                system("clear");
+                system ("clear");
 
                 for (int i = 0; i < str.length(); ++i) {
 
@@ -74,40 +73,39 @@ int main()
 
                     char ch = str.at(i);
 
-                    if (isdigit(ch)) {
+                    if (isdigit(ch))
+                    {
                         str.erase(ch);
                     }
-                    else {
+                    else
+                    {
                         continue;
                     }
                     sleep(1);
-                break;
+                    break;
+                }
             }
-            case (Quit): //user entered 5
-            {
-                cout << "Game over." << endl;
-                return 0;
+                case (Quit): //user entered 5
+                {
+                    cout << "Game over." << endl;
+                    return 0;
+                }
+                default: //user entered an incorrect choice
+                {
+                    cout << "Wrong shape." << endl;
+                    break;
+                }
+                cout << "Do you want to repeat? Y/N: ";
+                char userContinue;
+                cin >> userContinue;
+                userContinue = toupper(userContinue);
+                if (userContinue == 'Y') {
+                    continue;
+                } else {
+                    return 0; //ends the program if user does not choose to repeat
+                }
             }
-            default: //user entered an incorrect choice
-            {
-                cout << "Wrong shape." << endl;
-                break;
-            }
-        }
-        cout << "Do you want to repeat? Y/N: ";
-        char userContinue;
-        cin >> userContinue;
-        userContinue = toupper(userContinue);
-        if(userContinue == 'Y')
-        {
-            continue;
-        }
-        else
-        {
-            return 0; //ends the program if user does not choose to repeat
-        }
-    }
-    while(true);
+    }while(true);
 
     return 0;
 }

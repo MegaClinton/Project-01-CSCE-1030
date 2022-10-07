@@ -75,13 +75,13 @@ int main()
                     cout << str << endl;
 
                     char ch = str.at(i);
-
+                    
                     if (isdigit(ch))
                     {
                         str.erase(i, 1);
                     } else
                     {
-                        continue; //fhdsuaiofdewaa
+                        continue;
                     }
                     sleep(1);
                 }

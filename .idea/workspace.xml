@@ -18,7 +18,6 @@
     <list default="true" id="06489b9e-c43a-48de-a0b1-3dbc90622d28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSCE Project 1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CSCE Project 1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClintonProject01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ClintonProject01.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cdn0116Project1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cdn0116Project1.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,9 +71,9 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -98,6 +97,7 @@
       <workItem from="1664939181875" duration="83000" />
       <workItem from="1664939270350" duration="744000" />
       <workItem from="1665170133667" duration="240000" />
+      <workItem from="1665170542950" duration="1190000" />
     </task>
     <servers />
   </component>

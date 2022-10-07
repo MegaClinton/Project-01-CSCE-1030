@@ -64,25 +64,25 @@ int main()
             {
                 string str;
 
-                cout << "Enter sentence: " << endl;
+                cout << "Enter sentence: ";
 
                 cin.ignore();
                 getline(cin, str);
 
-                for (int i = 0; i < str.length(); ++i)
+                for (int i = 0; i <= str.length(); ++i)
                 {
 
-                    cout << str << endl;
-
                     char ch = str.at(i);
-                    
+
                     if (isdigit(ch))
                     {
+                        cout << str << endl;
                         str.erase(i, 1);
                     } else
                     {
                         continue;
                     }
+                    cout << str << endl;
                     sleep(1);
                 }
                 break;

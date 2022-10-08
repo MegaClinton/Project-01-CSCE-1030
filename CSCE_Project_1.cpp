@@ -82,9 +82,9 @@ int main()
                     {
                         continue;
                     }
-                    cout << str << endl;
                     sleep(1);
                 }
+                cout << str << endl;
                 break;
             }
             case (Quit): //user entered 5

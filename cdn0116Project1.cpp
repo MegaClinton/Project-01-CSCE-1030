@@ -62,6 +62,29 @@ int main()
             }
             case (Sentence): //user entered 4
             {
+                string str;
+
+                cout << "Enter sentence: ";
+
+                cin.ignore();
+                getline(cin, str);
+
+                for (int i = 0; i <= str.length(); ++i)
+                {
+
+                    char ch = str.at(i);
+
+                    if (isdigit(ch))
+                    {
+                        cout << str << endl;
+                        str.erase(i, 1);
+                    } else
+                    {
+                        continue;
+                    }
+                    sleep(1);
+                }
+                cout << str << endl;
                 break;
             }
             case (Quit): //user entered 5

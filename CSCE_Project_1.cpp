@@ -68,6 +68,7 @@ int main()
 
                 cin.ignore();
                 getline(cin, str);
+                system("clear");
 
                 for (int i = 0; i <= str.length(); ++i)
                 {
@@ -78,7 +79,8 @@ int main()
                     {
                         cout << str << endl;
                         str.erase(i, 1);
-                    } else
+                    }
+                    else
                     {
                         continue;
                     }

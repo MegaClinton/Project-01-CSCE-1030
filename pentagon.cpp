@@ -8,7 +8,7 @@ int main()
     cout<<"Enter length of the shape:";
     cin>>length;
     srand(time(NULL)); //seed random number generator
-    
+    system("clear");
     char ASCIIchar = (rand() % 32) + 33;
     
     for(int i=0; i < length; i++) //

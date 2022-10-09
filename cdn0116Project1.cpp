@@ -59,30 +59,30 @@ int main()
             case (Pentagon): //user entered 3
             {
                 system("clear");
-                 for(int i=0; i < length; i++) //
-                  {
-                         //For loop to add spaces.
-                        for (int s=1; s<length-i; s++)
-	                     {
-	                     	cout<<" ";
-	                     }
-	                   	// the increments of 2 for each line.
-	                  	for( int j =1; j<=((i*2)+1);j++)
-	                  	{
-		                     	cout<<ASCIIchar;
-		                  }
-		                  cout<<endl;
-		                  sleep(1);
-                       }
-	            for(int l = 1; l<=length-1;l++) //length of the rectangle.
-	             {
-	            	for(int w=1;w<=length*2-1;w++) // width of the rectangle to match the triangle.
-		           {
-		            	cout<<ASCIIchar;
-		            }
-	            	cout<<endl;
-	            	sleep(1);
-               }
+                for(int i=0; i < length; i++) //
+                {
+                    //For loop to add spaces.
+                    for (int s=1; s<length-i; s++)
+                    {
+                        cout<<" ";
+                    }
+                    // the increments of 2 for each line.
+                    for( int j =1; j<=((i*2)+1);j++)
+                    {
+                        cout<<ASCIIchar;
+                    }
+                    cout<<endl;
+                    sleep(1);
+                }
+                for(int l = 1; l<=length-1;l++) //length of the rectangle.
+                {
+                    for(int w=1;w<=length*2-1;w++) // width of the rectangle to match the triangle.
+                    {
+                        cout<<ASCIIchar;
+                    }
+                    cout<<endl;
+                    sleep(1);
+                }
                 break;
             }
             case (Sentence): //user entered 4
@@ -95,15 +95,23 @@ int main()
                 getline(cin, str);
                 system("clear");
 
-                for (int i = 0; i <= str.length(); ++i)
+                int count = 0;
+                for (int i = 0; i < str.length(); ++i)
                 {
+                    system("clear");
 
+                    for(int v = 0; v < count; v++)
+                    {
+                        cout<<endl;
+                    }
                     char ch = str.at(i);
 
                     if (isdigit(ch))
                     {
                         cout << str << endl;
                         str.erase(i, 1);
+                        i--;
+                        count++;
                     }
                     else
                     {

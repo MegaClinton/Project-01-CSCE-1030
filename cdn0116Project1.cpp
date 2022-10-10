@@ -39,10 +39,10 @@ int main()
                 {
                     system("clear"); //clear output each time new generation occurs
                     int subLength = i + 1; //generate squares of incremental length according to i
-                    for(int h = 1; h < subLength; h++) //generate vertical row
+                    for(int v = 1; v < subLength; v++) //generate vertical row
                     {
                         cout << ASCIIchar;
-                        for(int v = 1; v < subLength - 1; v++) //generate horizontal row for every vertical row
+                        for(int h = 1; h < subLength - 1; h++) //generate horizontal row for every vertical row
                         {
                             cout << ASCIIchar;
                         }
@@ -55,7 +55,7 @@ int main()
             case (Triangle): //user entered 2
             {
                 system("clear");
-                for(int i=0; i < length; i++) //
+                for(int i=0; i < length; i++)
                 {
                     for (int s=1; s<length-i; s++) //For loop to add spaces.
                     {
@@ -73,7 +73,7 @@ int main()
             case (Pentagon): //user entered 3
             {
                 system("clear");
-                for(int i=0; i < length; i++) //
+                for(int i=0; i < length; i++)
                 {
                     //For loop to add spaces.
                     for (int s=1; s<length-i; s++)
@@ -166,7 +166,7 @@ int main()
             return 0; //ends the program if user does not choose to repeat
         }
     }
-    while(true);
+    while(true); //keeps looping if user chooses to not quit
 
     return 0;
 }

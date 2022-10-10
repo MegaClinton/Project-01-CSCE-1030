@@ -145,7 +145,7 @@ int main()
         userContinue = toupper(userContinue);
         if(userContinue == 'Y')
         {
-            continue;
+            continue; //continues game
         }
         else
         {

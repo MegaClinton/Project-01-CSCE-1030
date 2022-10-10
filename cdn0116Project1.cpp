@@ -54,6 +54,20 @@ int main()
             }
             case (Triangle): //user entered 2
             {
+                system("clear");
+                for(int i=0; i < length; i++) //
+                {
+                    for (int s=1; s<length-i; s++) //For loop to add spaces.
+                    {
+                        cout<<" ";
+                    }
+                    for( int j =1; j<=((i*2)+1);j++) //The increments of 2 for each line.
+                    {
+                        cout<<ASCIIchar;
+                    }
+                    cout<<endl;
+                    sleep(1); //delay after each generated triangle
+                }
                 break;
             }
             case (Pentagon): //user entered 3

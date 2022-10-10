@@ -93,9 +93,8 @@ int main()
 
                 cin.ignore();
                 getline(cin, str);
-                system("clear");
 
-                int count = 0;
+                int count = 0; //integer used to keep track of amount of lines needed
                 for (int i = 0; i < str.length(); ++i)
                 {
                     system("clear");
@@ -109,15 +108,22 @@ int main()
                     if (isdigit(ch))
                     {
                         cout << str << endl;
-                        str.erase(i, 1);
-                        i--;
-                        count++;
+                        str.erase(i, 1); //take out digit from str
+                        i--; //decrement i to account for length being decreased by 1
+                        count++; //increment count for every digit removed
                     }
                     else
                     {
                         continue;
                     }
                     sleep(1);
+                }
+
+                system("clear");
+
+                for(int v = 0; v < count; v++)
+                {
+                    cout<<endl;
                 }
                 cout << str << endl;
                 break;

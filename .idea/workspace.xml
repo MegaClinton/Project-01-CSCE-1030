@@ -18,7 +18,6 @@
     <list default="true" id="06489b9e-c43a-48de-a0b1-3dbc90622d28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cdn0116Project1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cdn0116Project1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <workItem from="1665242384008" duration="400000" />
       <workItem from="1665258763141" duration="124000" />
       <workItem from="1665334420488" duration="2619000" />
-      <workItem from="1665357444691" duration="1771000" />
+      <workItem from="1665357444691" duration="3548000" />
     </task>
     <servers />
   </component>
